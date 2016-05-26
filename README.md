@@ -17,8 +17,43 @@ This package provides two things:
 [middleware]: https://docs.djangoproject.com/en/1.8/topics/http/middleware/
 [requestsummary]: https://github.com/mozilla-services/Dockerflow/blob/master/docs/mozlog.md#application-request-summary-type-requestsummary
 
-Testing
-=======
+## Examples
+
+Django `settings.py`:
+
+```python
+MIDDLEWARE_CLASSES = (
+    # ...
+    'mozilla_cloud_services_logger.django.middleware.RequestSummaryLogger',
+    # ...
+)
+
+LOGGING = {
+    'version': 1,
+    'formatters': {
+        'json': {
+            '()': 'testpilot.base.logging.JsonLogFormatter',
+            'logger_name': 'MySiteName'
+        }
+    },
+    'handlers': {
+        'console': {
+            'level': 'DEBUG',
+            'class': 'logging.StreamHandler',
+            'formatter': 'json'
+        },
+    },
+    'loggers': {
+        'request.summary': {
+            'handlers': ['console'],
+            'level': 'DEBUG',
+        },
+    }
+}
+```
+
+## Testing
+
 ```python
 pip install jsonschema testfixtures
 python tests.py
