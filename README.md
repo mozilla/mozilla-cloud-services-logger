@@ -1,6 +1,8 @@
 mozilla-cloud-services-logger
 -----------------------------
 
+[![Build Status](https://travis-ci.org/lmorchard/mozilla-cloud-services-logger.svg?branch=master)](https://travis-ci.org/lmorchard/mozilla-cloud-services-logger)
+
 This package provides two things:
 
 1. `mozilla_cloud_services_logger.formatters.JsonLogFormatter`: [a Python
