@@ -1,0 +1,6 @@
+tmp/
+*.log
+.env
+*.sw?
+*.pyc
+__pycache__/
