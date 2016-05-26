@@ -85,7 +85,7 @@ class TestJsonLogFormatter(unittest.TestCase):
             self.assertEqual(value, fields[key])
 
         self.assertTrue(fields['traceback'].startswith('Uncaught exception:'))
-        self.assertTrue("<class 'ValueError'>" in fields['traceback'])
+        self.assertTrue("ValueError" in fields['traceback'])
 
 
 # https://mana.mozilla.org/wiki/pages/viewpage.action?pageId=42895640
