@@ -1,13 +1,13 @@
 from distutils.core import setup
 setup(
   name = 'mozilla_cloud_services_logger',
-  packages = ['mozilla_cloud_services_logger'], # this must be the same as the name above
+  packages = ['mozilla_cloud_services_logger'],
   version = '1.0',
-  description = 'A random test lib',
+  description = 'Tools for producing a common application logging format defined by Mozilla Cloud Services',
   author = 'Les Orchard',
   author_email = 'lorchard@mozilla.com',
-  url = 'https://github.com/lmorchard/mozilla_cloud_services_logger', # use the URL to the github repo
-  download_url = 'https://github.com/lmorchard/mozilla_cloud_services_logger/tarball/0.1', # I'll explain this in a second
+  url = 'https://github.com/lmorchard/mozilla-cloud-services-logger',
+  download_url = 'https://github.com/lmorchard/mozilla-cloud-services-logger/tarball/1.0',
   keywords = ['mozilla', 'logging', 'django'],
   classifiers = [
      'Development Status :: 4 - Beta',
