@@ -1,7 +1,7 @@
 from distutils.core import setup
 setup(
   name = 'mozilla-cloud-services-logger',
-  packages = ['mozilla_cloud_services_logger', 'mozilla_cloud_services_logger.django']
+  packages = ['mozilla_cloud_services_logger', 'mozilla_cloud_services_logger.django'],
   version = '1.0.1',
   description = 'Tools for producing a common application logging format defined by Mozilla Cloud Services',
   author = 'Les Orchard',
