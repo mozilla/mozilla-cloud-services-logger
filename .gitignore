@@ -1,4 +1,6 @@
 tmp/
+dist/
+MANIFEST
 *.log
 .env
 *.sw?
