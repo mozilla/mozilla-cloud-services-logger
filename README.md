@@ -34,7 +34,7 @@ LOGGING = {
     'version': 1,
     'formatters': {
         'json': {
-            '()': 'testpilot.base.logging.JsonLogFormatter',
+            '()': 'mozilla_cloud_services_logger.formatters.JsonLogFormatter',
             'logger_name': 'MySiteName'
         }
     },
