@@ -6,3 +6,5 @@ MANIFEST
 *.sw?
 *.pyc
 __pycache__/
+.tox/
+mozilla_cloud_services_logger.egg-info/
