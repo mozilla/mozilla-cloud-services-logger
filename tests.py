@@ -47,7 +47,7 @@ class TestJsonLogFormatter(unittest.TestCase):
         for key, value in expected_meta.items():
             self.assertEqual(value, details[key])
 
-        self.assertEqual(details['Fields']['message'], message_text)
+        self.assertEqual(details['Fields']['msg'], message_text)
 
     def test_custom_paramters(self):
         """Ensure log formatter can handle custom parameters"""
@@ -59,7 +59,7 @@ class TestJsonLogFormatter(unittest.TestCase):
         self.assertEqual(details["Severity"], 4)
 
         fields = details['Fields']
-        self.assertEqual(fields["message"], "custom test one")
+        self.assertEqual(fields["msg"], "custom test one")
         self.assertEqual(fields["more"], "stuff")
 
     def test_logging_error_tracebacks(self):
@@ -78,7 +78,7 @@ class TestJsonLogFormatter(unittest.TestCase):
 
         fields = details['Fields']
         expected_fields = {
-            'message': 'there was an error',
+            'msg': 'there was an error',
             'error': "ValueError('\\n',)"
         }
         for key, value in expected_fields.items():

@@ -73,7 +73,7 @@ class JsonLogFormatter(logging.Formatter):
         message = record.getMessage()
         if message:
             if not message.startswith("{") and not message.endswith("}"):
-                fields["message"] = message
+                fields["msg"] = message
 
         # If there is an error, format it for nice output.
         if record.exc_info is not None:
