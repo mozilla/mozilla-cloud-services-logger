@@ -1,6 +1,8 @@
 mozilla-cloud-services-logger
 -----------------------------
 
+**Deprecated / Unmaintained** - This project is no longer maintained. Consider using [mozilla-services/python-dockerflow](https://github.com/mozilla-services/python-dockerflow) instead.
+
 [![Build Status](https://travis-ci.org/mozilla/mozilla-cloud-services-logger.svg?branch=master)](https://travis-ci.org/mozilla/mozilla-cloud-services-logger)
 
 This package provides two things:
